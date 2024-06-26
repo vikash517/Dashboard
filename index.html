@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <!-- <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header> -->
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">shopping_cart</span> STORE
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">inventory_2</span> Products
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">category</span> Categories
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">groups</span> Customers
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">fact_check</span> Inventory
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">poll</span> Reports
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">settings</span> Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>DASHBOARD</h2>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Total Revenue</h3>
+              <span class="material-icons-outlined">inventory_2</span>
+            </div>
+            <h1>249</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Total Profit</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>25</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Total Cost</h3>
+              <span class="material-icons-outlined">groups</span>
+            </div>
+            <h1>1500</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h>Total Order</h3>
+              <span class="material-icons-outlined">poll</span>
+            </div>
+            <h1>56</h1>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <h2 class="chart-title">Top 5 Products</h2>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">Purchase and Sales Orders</h2>
+            <div id="area-chart"></div>
+          </div>
+
+          <div class="charts-card">
+          
+            <h2 class="chart-title">Top 5 Products</h2>
+            <div id="pie-chart1"></div>
+          </div>
+
+          <div class="charts-card">
+          
+            <h2 class="chart-title">Top 5 Products</h2>
+            <div id="pie-chart2"></div>
+          </div>
+
+          <!-- <div class="charts-card">
+            <div class="card-header">
+              <div class="card-title">
+                <h2>Order List</h2>
+              </div>
+            </div>
+            <div class="form">
+              <div class="input-group">
+                <h5>Product Name</h5>
+                <input type="text" id="name">
+              </div>
+              <div class="input-group">
+                <h5>Order I'd</h5>
+                <input type="number" id="name">
+              </div>
+              <div class="input-group">
+                <h5>Price</h5>
+                <input type="number" id="phone">
+              </div> -->
+            </div>
+            <div class="table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Order Name</th>
+                    <th>Price</th>
+                    <th>Order ID</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>Product 1</td>
+                    <td>$100</td>
+                    <td>12345</td>
+                    <td>2022-03-01</td>
+                    <td>12:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Jane Doe</td>
+                    <td>Product 2</td>
+                    <td>$200</td>
+                    <td>12346</td>
+                    <td>2022-03-02</td>
+                    <td>01:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Bob Smith</td>
+                    <td>Product 3</td>
+                    <td>$300</td>
+                    <td>12347</td>
+                    <td>2022-03-03</td>
+                    <td>02:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Emily Johnson</td>
+                    <td>Product 4</td>
+                    <td>$400</td>
+                    <td>12348</td>
+                    <td>2022-03-04</td>
+                    <td>03:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Michael Brown</td>
+                    <td>Product 5</td>
+                    <td>$500</td>
+                    <td>12349</td>
+                    <td>2022-03-05</td>
+                    <td>04:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Sarah Lee</td>
+                    <td>Product 6</td>
+                    <td>$600</td>
+                    <td>12350</td>
+                    <td>2022-03-06</td>
+                    <td>05:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>David Wilson</td>
+                    <td>Product 7</td>
+                    <td>$700</td>
+                    <td>12351</td>
+                    <td>2022-03-07</td>
+                    <td>06:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Olivia Davis</td>
+                    <td>Product 8</td>
+                    <td>$800</td>
+                    <td>12352</td>
+                    <td>2022-03-08</td>
+                    <td>07:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>James Taylor</td>
+                    <td>Product 9</td>
+                    <td>$900</td>
+                    <td>12353</td>
+                    <td>2022-03-09</td>
+                    <td>08:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Ava Martinez</td>
+                    <td>Product 10</td>
+                    <td>$1000</td>
+                    <td>12354</td>
+                    <td>2022-03-10</td>
+                    <td>09:00 PM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+         
+
+
+        </div>
+        
+        
+        
+      </main>
+      <!-- End Main -->
+
+    </div>
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
